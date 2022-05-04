@@ -9,7 +9,7 @@
                     <div class="card mb-4">
                         <div class="card-body row justify-content-center">
                             @if ($post->imagen)
-                                <img src="{{ config('app.url').'/challenge-posts/storage/img/'. $post->id_usuario . "/" . $post->imagen}}" style="width: 250px;">
+                                <img src="{{ url('/').'/img/' . $post->id_usuario . "/" . $post->imagen}}" style="width: 250px;">
                             @endif
                             <h5 class="card-title row justify-content-center">Titulo : {{ $post->titulo }}</h5>
                             <p class="card-text row justify-content-center">
