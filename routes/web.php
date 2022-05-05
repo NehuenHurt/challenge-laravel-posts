@@ -30,7 +30,7 @@ Route::get('/index', function () {
         return view('auth/login');;
     } 
 });
-Auth::routes();
+//Auth::routes();
 Route::resource('usuarios', UsuariosController::class);
 Route::resource('categorias', CategoriasController::class);
 Route::resource('posts', PostsController::class);
